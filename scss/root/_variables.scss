@@ -1,0 +1,76 @@
+/*
+// Colores principales
+*/
+$color-blanco: rgb(255, 255, 255);
+    $color-blanco-3: rgba(255, 255, 255, 0.3);
+    $color-blanco-5: rgba(255, 255, 255, 0.5);
+    $color-blanco-8: rgba(255, 255, 255, 0.8);
+$color-gris: rgb(242, 242, 242);
+    $color-gris-3: rgba(242, 242, 242, 0.3);
+    $color-gris-5: rgba(242, 242, 242, 0.5);
+    $color-gris-8: rgba(242, 242, 242, 0.8);
+$color-gris-medio: rgb(189, 189, 189);
+    $color-gris-medio-3: rgba(189, 189, 189, 0.3);
+    $color-gris-medio-5: rgba(189, 189, 189, 0.5);
+    $color-gris-medio-8: rgba(189, 189, 189, 0.8);
+$color-gris-oscuro: rgb(102, 102, 102);
+    $color-gris-oscuro-3: rgba(102, 102, 102, 0.3);
+    $color-gris-oscuro-5: rgba(102, 102, 102, 0.5);
+    $color-gris-oscuro-8: rgba(102, 102, 102, 0.8);
+$color-negro: rgb(0, 0, 0);
+    $color-negro-3: rgba(0, 0, 0,0.3);
+    $color-negro-5: rgba(0, 0, 0,0.5);
+    $color-negro-8: rgba(0, 0, 0,0.8);
+
+
+
+/*
+// Paleta de colores
+*/
+$color-celeste: rgb(0, 177, 187);
+    $color-celeste-3: rgba(0, 177, 187, 0.3);
+    $color-celeste-5: rgba(0, 177, 187, 0.5);
+    $color-celeste-8: rgba(0, 177, 187, 0.8);
+$color-azul: rgb(28, 84, 135);
+    $color-azul-3: rgba(28, 84, 135, 0.3);
+    $color-azul-5: rgba(28, 84, 135, 0.5);
+    $color-azul-8: rgba(28, 84, 135, 0.8);
+$color-morado: rgb(79, 34, 125);
+    $color-morado-3: rgba(79, 34, 125, 0.3);
+    $color-morado-5: rgba(79, 34, 125, 0.5);
+    $color-morado-8: rgba(79, 34, 125, 0.8);
+
+
+
+/*
+// Variables de tamaños de fuentes
+*/
+
+$size-title: 3rem;
+$size-subtitle: 2.2rem;
+$size-paragraph: 1.6rem;
+
+
+/*
+// Tipografias
+*/
+    // importar fuente de la carpeta ../fonts
+    @font-face {font-family: 'title'; src: url('../fonts/Staatliches-Regular.ttf');}
+    @font-face {font-family: 'Repo';src: url('../fonts/Repo.otf');}
+    @font-face {font-family: 'Repo-light';src: url('../fonts/Repo-Light.otf');}
+    @font-face {font-family: 'Repo-medium';src: url('../fonts/Repo-Medium.otf');}
+    @font-face {font-family: 'Repo-demibold';src: url('../fonts/Repo-DemiBold.otf');}
+    @font-face {font-family: 'Repo-bold';src: url('../fonts/Repo-Bold.otf');}
+    @font-face {font-family: 'Repo-extrabold';src: url('../fonts/Repo-ExtraBold.otf');}
+    @font-face {font-family: 'Repo-black';src: url('../fonts/Repo-Black.otf');}
+    @font-face {font-family: 'Repo-extrablack';src: url('../fonts/Repo-ExtraBlack.otf');}
+    // Variables de fuentes
+    $font-title: 'title';
+    $font-repo: 'Repo';
+    $font-repo-light: 'Repo-light';
+    $font-repo-medium: 'Repo-medium';
+    $font-repo-demibold: 'Repo-demibold';
+    $font-repo-bold: 'Repo-bold';
+    $font-repo-extrabold: 'Repo-extrabold';
+    $font-repo-black: 'Repo-black';
+    $font-repo-extrablack: 'Repo-extrablack';

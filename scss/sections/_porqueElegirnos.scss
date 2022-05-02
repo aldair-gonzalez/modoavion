@@ -1,0 +1,63 @@
+.porqueElegirnos{
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    &__container{
+        width: 95%;
+        margin: auto;
+        &-titulo{
+            width: 100%;
+            color: $color-azul;
+            font: {
+                family: $font-title;
+                weight: bold;
+                size: 5.5rem;
+            }
+        }
+        &-grid{
+            @include flex(row,nowrap,center,center);
+        }
+        &-listado{
+            width: 60%;
+            padding: 1rem .5rem;
+            overflow: hidden;
+        }
+        &-item{
+            width: 100%;
+            margin: 3rem 0;
+            @include flex(row,nowrap,center,center);
+        }
+        &-icono{
+            width: 20%;
+            overflow: hidden;
+            @include flex(column,nowrap,center,center);
+            img{
+                width: 80%;
+                border-radius: 1rem;
+            }
+        }
+        &-parrafo{
+            width: 80%;
+        }
+        &-subtitulo{
+            text-shadow: 2px 2px 2px $color-celeste;
+            font: {
+                family: $font-repo-light;
+                weight: 300;
+                size: 3rem;
+            }
+        }
+        &-texto{
+            line-height: 1.7;
+            text-align: justify;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: 1.8rem;
+            }
+        }
+        &-imagen{
+            width: 40%;
+        }
+    }
+}

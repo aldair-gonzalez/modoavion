@@ -1,0 +1,41 @@
+.quienesSomos{
+    width: 100%;
+    height: 100vh;
+    &__container{
+        background-image: url('../img/components/plane-3130088_1920.jpg');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        @include flex(column,nowrap,center,center);
+        &-caja{
+            width: 100%;
+            height: 50%;
+            margin:1rem 0;
+        }
+        &-p{
+            height: 100%;
+            @include flex(column,nowrap,flex-start,center);
+            &.flex{
+                align-items: flex-end;
+            }
+        }
+        &-titulo{
+            width: 50%;
+            text-align: center;
+            color: $color-azul;
+            font: {
+                family: $font-title;
+                weight: bold;
+                size: 5.5rem;
+            }
+        }
+        &-parrafo{
+            width: 50%;
+            padding: 0 3rem;
+            line-height: 1.7;
+        }
+    }
+}

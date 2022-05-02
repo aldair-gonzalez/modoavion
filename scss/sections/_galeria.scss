@@ -1,0 +1,175 @@
+.galeria{
+    width: 100%;
+    height: 100vh;
+    // padding: 2rem 0;
+    overflow: hidden;
+    &__container{
+        width: 100%;
+        height: 100%;
+        @include grid(3,0);
+    }
+    &__group{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            .galeria__group-imagen{
+                transform: scale(1.1);
+            }
+            .galeria__group-text{
+                background: $color-negro-5;
+            }
+        }
+        &-imagen{
+            object-fit: cover;
+            transition: all 1s ease-in-out;
+        }
+        &-text{
+            background: $color-negro-3;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            transition: all .5s ease-in-out;
+            padding: 2rem;
+        }
+        &-h3{
+            color: $color-blanco;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: $size-subtitle;
+            }
+        }
+        &-descripcion{
+            color: $color-blanco-8;
+            text-align: justify;
+            font: {
+                family: $font-repo-light;
+                weight: 300;
+                size: $size-paragraph;
+            }
+        }
+    }
+    &__lightbox{
+        background: $color-negro-8;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        @include flex(column,wrap,center,center);
+        transform: scale(1.1);
+        pointer-events: none;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        &.active{
+            transform: scale(1);
+            pointer-events: all;
+            opacity: 1;
+        }
+        &-container{
+            width: 95%;
+            height: 95%;
+            padding: 1rem 0;
+            overflow: scroll;
+            position: relative;
+            @include grid(2,0);
+            @include media(650px){
+                @include grid(1,0);
+            }
+        }
+        &-button{
+            position: absolute;
+            top: 1.5rem;
+            right: .5rem;
+        }
+        &-cerrar{
+            background: $color-negro;
+            color: $color-blanco;
+            margin-bottom: 1rem;
+            padding: 1rem 2rem;
+            border-radius: .4rem;
+            cursor: pointer;
+            transition: all .2s ease-out;
+            &:hover{
+                box-shadow: 0 0 5px $color-blanco;
+            }
+        }
+        &-imagen{
+            width: 100%;
+            height: 100%;
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+            &:hover{
+                .galeria__lightbox-overlay{
+                    opacity: 0;
+                }
+            }
+        }
+        &-img{
+            object-fit: cover;
+            transition: all 1s ease-in-out;
+        }
+        &-overlay{
+            background: $color-negro-3;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all 1s ease-in-out;
+        }
+        &-description{
+            color: $color-blanco-5;
+            width: 100%;
+            height: 100%;
+            padding: 2rem;
+            overflow: hidden;
+            @include flex(column,nowrap,center,center);
+        }
+        &-h2{
+            color: $color-blanco;
+            width: 100%;
+            padding: 1rem;
+            padding-bottom: 0;
+            letter-spacing: .2rem;
+            font: {
+                family: $font-title;
+                weight: 300;
+                size: 3rem;
+            }
+        }
+        &-h3{
+            color: $color-blanco-5;
+            width: 100%;
+            padding: 1rem;
+            font: {
+                font: $font-title;
+                weight: 300;
+                size: 2rem;
+            }
+        }
+        &-p{
+            color: $color-gris-8;
+            width: 100%;
+            padding: 1rem;
+            text-align: justify;
+            line-height: 2.5;
+            letter-spacing: .1rem;
+            font: {
+                family: $font-repo-light;
+                weight: 300;
+                size: 1.7rem;
+            }
+        }
+    }
+}

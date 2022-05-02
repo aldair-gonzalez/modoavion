@@ -1,0 +1,8 @@
+// root
+@import 'root/variables', 'root/mixins', 'root/root';
+
+// components
+@import 'components/nav', 'components/footer';
+
+// sections
+@import 'sections/inicio', 'sections/galeria', 'sections/quienesSomos', 'sections/porqueElegirnos';

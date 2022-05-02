@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    overflow: hidden;
+    &__container{
+        width: 95%;
+        margin: auto;
+        padding-top: 3rem;
+    }
+    &__nav{
+        width: 100%;
+        @include flex(row,wrap,center,space-between);
+    }
+    &__logo{
+        width: 17rem;
+        &-link{
+            width: 100%;
+        }
+        &-svg{
+            width: 100%;
+        }
+    }
+    &__menu{
+        &-list{
+            @include flex(row,wrap,center,center);
+        }
+        &-item{
+            font: {
+                family: $font-repo-light;
+                weight: 100;
+                size: 1.7rem;
+            }
+        }
+        &-link{
+            margin-left: 2rem;
+            .fa-instagram{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
