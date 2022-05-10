@@ -1,0 +1,106 @@
+.formulario{
+    width: 100%;
+    padding: 3rem 0;
+    overflow: hidden;
+    &__container{
+        width: 95%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    &__h2{
+        width: 100%;
+        text-align: center;
+        color: $color-azul;
+        font: {
+            family: $font-title;
+            weight: bold;
+            size: 5.5rem;
+        }
+    }
+    &__form{
+        width: 100%;
+        overflow: hidden;
+        padding: 1rem 0;
+        &-container{
+            width: 100%;
+            @include grid(2,1rem);
+            @include media(550px){
+                @include grid(1,0);
+            }
+        }
+        &-group{
+            width: 100%;
+            @include flex(column,nowrap,flex-start,center);
+            padding: 0 2.5rem;
+        }
+        &-label{
+            width: 100%;
+            padding: .5rem 1.5rem;
+            color: $color-azul;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: 1.8rem;
+            }
+        }
+        &-input{
+            width: 95%;
+            outline: solid 2px $color-celeste;
+            border-radius: 10rem;
+            padding: 1rem 2rem;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: 1.8rem;
+            }
+            transition: all .3s ease;
+            &:focus{
+                background: $color-celeste;
+                color: $color-blanco;
+                outline-offset: .2rem;
+                &::placeholder{
+                    color: $color-gris-8;
+                }
+            }
+        }
+        &-textarea{
+            width: 95%;
+            max-width: 50%;
+            min-width: 50%;
+            min-height: 2.2rem;
+            max-height: 25rem;
+            outline: solid 2px $color-celeste;
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: 1.8rem;
+            }
+        }
+        &-buttons{
+            width: 100%;
+            @include flex(row,nowrap,center,center);
+            padding: 1rem 0;
+        }
+        &-button{
+            width: 30%;
+            margin: 1rem;
+            padding: 1rem 2rem;
+            border: solid 2px $color-celeste;
+            border-radius: 10rem;
+            color: $color-celeste;
+            cursor: pointer;
+            font: {
+                family: $font-repo;
+                weight: 300;
+                size: 1.8rem;
+            }
+            transition: all .3s ease;
+            &:hover{
+                background: $color-celeste;
+                color: $color-blanco;
+            }
+        }
+    }
+}

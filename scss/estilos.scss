@@ -2,7 +2,7 @@
 @import 'root/variables', 'root/mixins', 'root/root';
 
 // components
-@import 'components/nav', 'components/footer';
+@import 'components/nav', 'components/footer', 'components/loader';
 
 // sections
-@import 'sections/inicio', 'sections/galeria', 'sections/quienesSomos', 'sections/porqueElegirnos';
+@import 'sections/inicio', 'sections/galeria', 'sections/quienesSomos', 'sections/porqueElegirnos', 'sections/formulario';

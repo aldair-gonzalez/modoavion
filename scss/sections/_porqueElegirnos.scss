@@ -16,11 +16,17 @@
         }
         &-grid{
             @include flex(row,nowrap,center,center);
+            @include media(700px){
+                @include flex(column,nowrap,center,center);
+            }
         }
         &-listado{
             width: 60%;
             padding: 1rem .5rem;
             overflow: hidden;
+            @include media(700px){
+                width: 100%;
+            }
         }
         &-item{
             width: 100%;
@@ -58,6 +64,9 @@
         }
         &-imagen{
             width: 40%;
+            @include media(700px){
+                width: 100%;
+            }
         }
     }
 }

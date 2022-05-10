@@ -4,6 +4,9 @@
         height: 91vh;
         @include grid(2,0);
         position: relative;
+        @include media(550px){
+            @include grid(1,0);
+        }
         &-group{
             width: 100%;
             height: 100%;
@@ -11,9 +14,28 @@
             &.logo{
                 @include flex(column,wrap,center,center);
             }
+            &.svg{
+                @include flex(column,wrap,center,center);
+                transform: scale(1.8);
+                @include media(1000px){
+                    transform: scale(1.5);
+                }
+                @include media(855px){
+                    transform: scale(1.2);
+                }
+                @include media(630px){
+                    transform: scale(1);
+                }
+            }
         }
         &-logo{
             width: 22rem;
+            @include media(680px){
+                width: 18rem;
+            }
+            @include media(630px){
+                width: 15rem;
+            }
         }
         &-svg{
             width: 100%;
