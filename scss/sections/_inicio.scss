@@ -17,6 +17,7 @@
             &.svg{
                 @include flex(column,wrap,center,center);
                 transform: scale(1.8);
+                pointer-events: none;
                 @include media(1000px){
                     transform: scale(1.5);
                 }
